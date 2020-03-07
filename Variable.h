@@ -13,7 +13,7 @@
 namespace solver{
 
     class Variable {
-
+    public:
         float i;
 
         Variable() {}
