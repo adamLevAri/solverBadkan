@@ -11,7 +11,7 @@
 
 #include <stdio.h>
 #include "Variable.h"
-
+using namespace solver;
 class POLI{     //FORM: ax^e+bx+c
 private:
     float a,b,c;
