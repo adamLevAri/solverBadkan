@@ -75,7 +75,7 @@ POLI operator == (POLI A, LINE B){
     return C;
 }
 
-ostream &operator << (ostream &output, const VAR &A) {
+ostream &operator << (ostream &output, const Variable &A) {
    if (A.i)
        output << "X = " << A.i;
     else
