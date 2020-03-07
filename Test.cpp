@@ -12,8 +12,8 @@
 TEST_CASE("Test case 1") {
    solver::Variable x;
    
-   solve((2*x^2) - 4*x + 3 == 9);
-   CHECK(x == 3);
+   
+   CHECK((solve((2*x^2) - 4*x + 3 == 9)) == 3);
    /*
     CHECK(solve((2*x^2) - 4*x + 3 == 9) == string("3"));
     CHECK(solve((x^2) + 6*x == -9) == string("-3"));
@@ -32,8 +32,8 @@ TEST_CASE("Test case 1") {
 TEST_CASE("Test case 2") {
     solver::Variable y;
     
-   solve((2*y^2) - 4*y + 3 == 9);
-   CHECK(y == 3);
+   
+   CHECK((solve((2*y^2) - 4*y + 3 == 9)) == 3);
    /*
     CHECK(solve((2*y^2) - 4*y + 3 == 9) == string("3"));
     CHECK(solve((y^2) + 6*y == -9) == string("-3"));
