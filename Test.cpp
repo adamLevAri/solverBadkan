@@ -10,7 +10,7 @@
 #include "solver.hpp"
 
 TEST_CASE("Test case 1") {
-   	Variable x;
+   solver::Variable x;
 
    CHECK(solve((2*x^2) - 4*x + 3 == 9) == int(3));
    /*
@@ -29,7 +29,7 @@ TEST_CASE("Test case 1") {
 }
 
 TEST_CASE("Test case 2") {
-    Variable y;
+    solver::Variable y;
     
    CHECK(solve((2*y^2) - 4*y + 3 == 9) == int(3));
    /*
