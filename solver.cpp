@@ -8,4 +8,3 @@
 //
 
 #include <stdio.h>
-#include "solver.hpp"
