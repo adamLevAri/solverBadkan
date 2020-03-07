@@ -10,11 +10,16 @@
 #define Variable_hpp
 
 #include <stdio.h>
+namespace solver{
 
-namespace Variable {
-    
-    float i;
-    
-};
+    class Variable {
+
+        float i;
+
+        Variable() {}
+        ~Variable() {}
+
+    };
+}
 
 #endif /* Variable_hpp */
