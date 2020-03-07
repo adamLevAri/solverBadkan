@@ -11,6 +11,8 @@
 
 #include "Variable.h"
 #include <stdio.h>
+
+using namespace solver;
 class LINE{     //FORM: ax+b
 private:
     float a, b;
