@@ -35,4 +35,10 @@ TEST_CASE("Test case 2") {
     CHECK(solve((y^2) + 6*y == -9) == string("-3"));
     CHECK(solve(2*y-4 == 10) == string("7"));
     CHECK(solve((y^2) == 16) == string("4"));
+   
+    CHECK(solve((2*y^2) - 4*y + 3 == 9) == string("3"));
+    CHECK(solve((2*y^2) - 4*y + 3 == 9) == string("3"));
+    CHECK(solve((y^2) + 6*y == -9) == string("-3"));
+    CHECK(solve(2*y-4 == 10) == string("7"));
+    CHECK(solve((y^2) == 16) == string("4"));
 }
