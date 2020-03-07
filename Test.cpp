@@ -12,7 +12,7 @@
 TEST_CASE("Test case 1") {
    solver::Variable x;
    
-   solve((2*x^2) - 4*x + 3 == 9)
+   solve((2*x^2) - 4*x + 3 == 9);
    CHECK(x == 3);
    /*
     CHECK(solve((2*x^2) - 4*x + 3 == 9) == string("3"));
