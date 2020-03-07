@@ -1,13 +1,13 @@
 //
-//  operatorShift.hpp
-//  operatorOverload
+//  solver.hpp
+//  Solver
 //
 //  Created by Adam Lev-Ari on 01/01/2020.
 //  Copyright © 2020 Adam Lev-Ari. All rights reserved.
 //
 
-#ifndef operatorShift_hpp
-#define operatorShift_hpp
+#ifndef solver_hpp
+#define solver_hpp
 
 #include <stdio.h>
 #include <iostream>
@@ -131,4 +131,4 @@ int solve(POLI x){return (int)x.getX()->i;}
 int solve(LINE x){return (int)x.getX()->i;}
 
 
-#endif /* operatorShift_hpp */
+#endif /* solver_hpp */
