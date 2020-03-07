@@ -11,13 +11,9 @@
 
 #include <stdio.h>
 
-class Variable{
-public:
+namespace Variable {
     
     float i;
-    
-    Variable(){}
-    ~Variable(){}
     
 };
 
