@@ -1,21 +1,22 @@
 #!make -f
 
-CFLAGS=-stdlib=libc++ -std=c++11
+CXX=clang++-9 
+CXXFLAGS=-std=c++2a
 
-demo:  operatorShift.o Demo.o
-	g++ $(CFLAGS) $^ -o demo
+HEADERS=solver.hpp
+OBJECTS=solver.o
 
-test:  operatorShift.o badkan.o
-	g++ $(CFLAGS) $^ -o test
+run: demo
+	./$^
 
-%.o: %.cpp
-	g++ $(CFLAGS) -c $< -o $@
-	
-Demo.o: Demo.cpp Demo.h
+demo: Demo.o $(OBJECTS)
+	$(CXX) $(CXXFLAGS) $^ -o demo
 
-badkan.o: badkan.cpp badkan.h
+test: TestCounter.o Test.o o $(OBJECTS)
+	$(CXX) $(CXXFLAGS) $^ -o test
 
-operatorShift.o: LINE.h POLI.h VAR.h
+%.o: %.cpp $(HEADERS)
+	$(CXX) $(CXXFLAGS) --compile $< -o $@
 
 clean:
 	rm -f *.o demo test
