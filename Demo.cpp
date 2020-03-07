@@ -11,7 +11,7 @@
 #include "solver.hpp"
 
 int main(){
-    VAR x;
+   solver::Variable x;
     
     solve((2*x^2) - 4*x + 3 == 9);
     cout << x << endl;     
