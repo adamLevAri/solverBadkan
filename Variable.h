@@ -1,5 +1,5 @@
 //
-//  VAR.hpp
+//  Variable.hpp
 //  operatorOverload
 //
 //  Created by Adam Lev-Ari on 01/01/2020.
@@ -11,14 +11,14 @@
 
 #include <stdio.h>
 
-class VAR{
+class Variable{
 public:
     
     float i;
     
-    VAR(){}
-    ~VAR(){}
+    Variable(){}
+    ~Variable(){}
     
 };
 
-#endif /* VAR_hpp */
+#endif /* Variable_hpp */
