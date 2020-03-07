@@ -10,13 +10,13 @@
 #define POLI_hpp
 
 #include <stdio.h>
-#include "VAR.h"
+#include "Variable.h"
 
 class POLI{     //FORM: ax^e+bx+c
 private:
     float a,b,c;
     int e;
-    VAR* x;
+    Variable* x;
     
 public:
     POLI(): a(0), b(0), c(0), e(1){}            //default Constructor
@@ -28,7 +28,7 @@ public:
     float getB() { return b; };
     float getC() { return c; };
     int getE() { return e; };
-    VAR* getX() { return x; };
-    void setX(VAR* x) { this->x = x; }
+    Variable* getX() { return x; };
+    void setX(Variable* x) { this->x = x; }
 };
 #endif /* POLI_hpp */
