@@ -8,7 +8,7 @@
 
 
 #include <iostream>
-#include "operatorShift.h"
+#include "solver.hpp"
 
 int main(){
     VAR x;
