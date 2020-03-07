@@ -11,7 +11,6 @@
 
 #include <stdio.h>
 #include <iostream>
-#include "Variable.h"
 #include "LINE.h"
 #include "POLI.h"
 #include "math.h"
