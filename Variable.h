@@ -6,8 +6,8 @@
 //  Copyright © 2020 Adam Lev-Ari. All rights reserved.
 //
 
-#ifndef VAR_hpp
-#define VAR_hpp
+#ifndef Variable_hpp
+#define Variable_hpp
 
 #include <stdio.h>
 
